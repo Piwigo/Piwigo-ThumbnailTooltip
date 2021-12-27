@@ -1,0 +1,1 @@
+Le permite cambiar el tooltip de las imágenes en los álbumes, y ver el autor en las descripciones de los álbumes

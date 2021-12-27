@@ -1,0 +1,4 @@
+File automatically created from SVN or Git repository.
+
+URL: https://github.com/Sarybe/ThumbnailTooltip 
+Revision: 12a8197afffd09e831bb4af45698a704aab72fdf (Wed Feb 8 23:02:53 2017 +0100)
