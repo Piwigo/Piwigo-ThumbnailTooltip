@@ -19,6 +19,17 @@ if (!defined('PHPWG_ROOT_PATH')) {
 
 define('thumbnail_tooltip_PATH' , PHPWG_PLUGINS_PATH.basename(dirname(__FILE__)).'/');
 
+if (basename(dirname(__FILE__)) != 'ThumbnailTooltip')
+{
+  add_event_handler('init', 'thumbnailtooltip_error');
+  function thumbnailtooltip_error()
+  {
+    global $page;
+    $page['errors'][] = 'ThumbnailTooltip folder name is incorrect, uninstall the plugin and rename it to "ThumbnailTooltip"';
+  }
+  return;
+}
+
 
 if (script_basename()  == 'admin') {
   include(dirname(__FILE__).'/admin/functions.inc.php');
