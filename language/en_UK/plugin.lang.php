@@ -22,4 +22,6 @@ $lang['tn_type8'] = '(Hits, Rating score)';
 $lang['tn_configuration_saved'] = 'Configuration saved';
 $lang['tn_default_parameters'] = 'Default configuration';
 $lang['tn_default_parameters_saved'] = 'Default configuration saved';
+
+$lang['author(s) : %s'] = 'author(s) : %s';
 ?>

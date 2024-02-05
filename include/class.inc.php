@@ -125,7 +125,7 @@ class Thumbnail_Tooltip_IMG {
 		  } while ($row = pwg_db_fetch_assoc($result));
 
 		  $auteur = substr($auteur, 0, -2);
-	      if (preg_match('#(,|\/)#i', $auteur )) { $auteur = str_replace(array('(',')'), '', ucfirst(sprintf($lang['author(s) : %s'], $auteur))); } else { $auteur = $lang['Author'].' : '.$auteur ; }
+	      if (preg_match('#(,|\/)#i', $auteur )) { $auteur = str_replace(array('(',')'), '', ucfirst(sprintf(l10n('author(s) : %s'), $auteur))); } else { $auteur = $lang['Author'].' : '.$auteur ; }
 	      if (!empty($tpl_var[$cle]['DESCRIPTION'])) { $tpl_var[$cle]['DESCRIPTION'] = $tpl_var[$cle]['DESCRIPTION'].'<br/>'.$auteur; } else { $tpl_var[$cle]['DESCRIPTION'] = $auteur; }
 	    }
       }
