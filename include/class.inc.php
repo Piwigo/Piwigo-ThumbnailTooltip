@@ -45,7 +45,7 @@ class Thumbnail_Tooltip_IMG {
         $details = array();
         $details_param = array();
 
-        $details['tn_type1'] = strip_tags($row['name']);
+        $details['tn_type1'] = strip_tags($row['name'] ?? '');
 
         if (!empty($row['hit'])) {
 		  $details['tn_type2'] = $row['hit'].' '.strtolower(l10n('Visits'));
